@@ -1,0 +1,96 @@
+{
+  "task": "shopping",
+  "selected_model": "random_forest",
+  "threshold": 0.20000000000000004,
+  "selection_metric": "validation_average_precision",
+  "seed": 42,
+  "split_sizes": {
+    "train": 7323,
+    "validation": 2441,
+    "test": 2441
+  },
+  "test": {
+    "accuracy": 0.7218353133961491,
+    "precision": 0.31689272503082616,
+    "recall": 0.6727748691099477,
+    "f1": 0.4308466051969824,
+    "roc_auc": 0.7793584035354936,
+    "average_precision": 0.3722794896319035
+  },
+  "confusion_matrix": [
+    [
+      1505,
+      554
+    ],
+    [
+      125,
+      257
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9233128834355828,
+      "recall": 0.7309373482272948,
+      "f1-score": 0.8159392789373814,
+      "support": 2059.0
+    },
+    "1": {
+      "precision": 0.31689272503082616,
+      "recall": 0.6727748691099477,
+      "f1-score": 0.4308466051969824,
+      "support": 382.0
+    },
+    "accuracy": 0.7218353133961491,
+    "macro avg": {
+      "precision": 0.6201028042332045,
+      "recall": 0.7018561086686212,
+      "f1-score": 0.6233929420671819,
+      "support": 2441.0
+    },
+    "weighted avg": {
+      "precision": 0.8284122277573293,
+      "recall": 0.7218353133961491,
+      "f1-score": 0.7556748785404817,
+      "support": 2441.0
+    }
+  },
+  "audit": {
+    "raw_rows": 12330,
+    "rows": 12205,
+    "duplicates_removed": 125,
+    "conflicting_rows_removed": 0,
+    "missing_cells": 0,
+    "positive_rate": 0.15632937320770177,
+    "features": [
+      "Administrative",
+      "Administrative_Duration",
+      "Informational",
+      "Informational_Duration",
+      "ProductRelated",
+      "ProductRelated_Duration",
+      "BounceRates",
+      "ExitRates",
+      "SpecialDay",
+      "Month",
+      "OperatingSystems",
+      "Browser",
+      "Region",
+      "TrafficType",
+      "VisitorType",
+      "Weekend"
+    ],
+    "source_url": "https://archive.ics.uci.edu/static/public/468/online%2Bshoppers%2Bpurchasing%2Bintention%2Bdataset.zip",
+    "raw_sha256": "b3055ee355f59134d851d32641183cb4a8b45def7124d2f50442a042f358e0d9"
+  },
+  "convergence_warnings": [
+    "logistic_unscaled"
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  }
+}
